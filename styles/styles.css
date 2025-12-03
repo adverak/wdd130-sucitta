@@ -1,0 +1,59 @@
+/* Improved headings + responsive sizing, better contrast, spacing, and image handling */
+
+/* Headings: responsive sizes, tighter line-height, sensible defaults & fallbacks */
+h1 {
+    font-size: clamp(1.75rem, 2.5vw + 1rem, 2.5rem);
+    line-height: 1.15;
+    margin: 0 0 1rem;
+    color: var(--accent, #0b69ff);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+}
+
+h2 {
+    font-size: clamp(1.25rem, 1.8vw + 0.8rem, 1.75rem);
+    line-height: 1.2;
+    margin: 0 0 0.75rem;
+    color: var(--text, #111827);
+    font-weight: 600;
+}
+
+h3 {
+    font-size: clamp(1rem, 1.2vw + 0.6rem, 1.25rem);
+    line-height: 1.22;
+    margin: 0 0 0.5rem;
+    color: var(--muted, #6b7280);
+    font-weight: 600;
+}
+
+/* Images: block layout, cover when needed, subtle lift on hover/focus, reduced-motion respect */
+img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;               /* keeps focal area when placed inside fixed boxes */
+    border-radius: var(--radius, 8px);
+    margin: 0 0 1rem;
+    background-color: var(--image-bg, #f6f7fb);
+    transition: transform .22s ease, box-shadow .22s ease;
+    will-change: transform, box-shadow;
+    outline: none;
+}
+
+/* Subtle interactive feedback for keyboard users and hover */
+img:hover,
+img:focus-visible {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(16, 24, 40, 0.08);
+    border-radius: calc(var(--radius, 8px) + 1px);
+}
+
+/* Respect user preference to reduce motion */
+@media (prefers-reduced-motion: reduce) {
+    img {
+        transition: none !important;
+        will-change: auto;
+    }
+}
