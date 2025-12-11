@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Showcase Subpage</title>
+</head>
+<body>
+
+  <header>
+    <h1>Site Logo</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Showcase 1</h2>
+      <figure>
+        <img src="showcase1.jpg" alt="Showcase 1 image">
+        <figcaption>Showcase 1 description</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Showcase 2</h2>
+      <figure>
+        <img src="showcase2.jpg" alt="Showcase 2 image">
+        <figcaption>Showcase 2 description</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <p>Lorem ipsum dolor sit</p>
+      <figure>
+        <img src="image1.jpg" alt="Related image 1">
+      </figure>
+    </section>
+
+    <section>
+      <p>Lorem ipsum dolor sit</p>
+      <figure>
+        <img src="image2.jpg" alt="Related image 2">
+      </figure>
+    </section>
+
+    <section>
+      <p>Lorem ipsum dolor sit</p>
+      <figure>
+        <img src="image3.jpg" alt="Related image 3">
+      </figure>
+    </section>
+
+    <section>
+      <p>Lorem ipsum dolor sit</p>
+      <figure>
+        <img src="image4.jpg" alt="Related image 4">
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Your Website Name</p>
+  </footer>
+
+</body>
+</html>
